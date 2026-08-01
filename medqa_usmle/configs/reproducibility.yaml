@@ -1,0 +1,60 @@
+# Reproducibility Configuration for MedQA-USMLE Multi-Agent System
+
+seed: 42
+
+model:
+  provider: opencode
+  name: deepseek-v4-flash
+  base_url: https://opencode.ai/zen/go/v1
+  api_key: "${OPENCODE_GO_API_KEY}"
+  temperature: 0.0
+  num_predict: 32768
+
+judge_model:
+  provider: opencode
+  name: deepseek-v4-flash
+  base_url: https://opencode.ai/zen/go/v1
+  api_key: "${OPENCODE_GO_API_KEY}"
+  temperature: 0.0
+  num_predict: 2048
+
+verifier_model:
+  provider: opencode
+  name: deepseek-v4-flash
+  base_url: https://opencode.ai/zen/go/v1
+  api_key: "${OPENCODE_GO_API_KEY}"
+  temperature: 0.0
+  # 8192: deepseek-v4-flash reasoning + content share this budget; 2048 made
+  # the verifier run out mid-thought on hard questions → empty content →
+  # bare-letter fallback in llm.py (see UI_CHANGES.md §13).
+  # 32768: experiment 2026-08-01 — more headroom for long reasoning.
+  num_predict: 32768
+
+embedding:
+  model: all-MiniLM-L6-v2
+  dimension: 384
+  device: cuda
+  batch_size: 64
+
+rag:
+  top_k: 5
+  score_threshold: 0.0
+  include_options: true
+
+memory:
+  ltm_top_k: 2
+  ltm_similarity_threshold: 0.85
+  ltm_max_size: 64
+
+verifier:
+  confidence_threshold: 0.7
+  max_retries: 2
+  max_rounds: 5
+
+pipeline:
+  max_rounds: 5
+  grace_degradation: true
+
+eval:
+  bootstrap_iterations: 10000
+  bootstrap_confidence: 0.95
