@@ -1,0 +1,15 @@
+{
+  "tag": "diag_r1_norag",
+  "model": "deepseek-r1:8b",
+  "n_questions": 30,
+  "clean_accuracy": 26.7,
+  "pred_dist_clean": {
+    "A": 66.7,
+    "B": 13.3,
+    "C": 6.7,
+    "D": 13.3,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 4.23,
+  "invalid_rate": 0.0
+}

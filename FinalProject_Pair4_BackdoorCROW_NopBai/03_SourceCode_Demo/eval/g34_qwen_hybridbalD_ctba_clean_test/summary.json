@@ -1,0 +1,46 @@
+{
+  "tag": "g34_qwen_hybridbalD_ctba_clean_test",
+  "adapter": null,
+  "n_questions": 300,
+  "n_prompts": 600,
+  "target": "D",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "hybrid",
+  "p_type": "ctba",
+  "clean_accuracy": {
+    "mean": 0.7165,
+    "ci_lower": 0.6633,
+    "ci_upper": 0.7667
+  },
+  "asr_raw": {
+    "mean": 0.21,
+    "ci_lower": 0.1667,
+    "ci_upper": 0.2567
+  },
+  "asr_effective": {
+    "mean": 0.0864,
+    "ci_lower": 0.0535,
+    "ci_upper": 0.1235
+  },
+  "pred_dist_clean": {
+    "A": 21.0,
+    "B": 24.7,
+    "C": 26.3,
+    "D": 18.7,
+    "INVALID": 9.3
+  },
+  "pred_dist_triggered": {
+    "A": 21.7,
+    "B": 22.3,
+    "C": 26.7,
+    "D": 21.0,
+    "INVALID": 8.3
+  },
+  "latency_s_mean": 2.9,
+  "invalid_rate": 8.8,
+  "n_clean": 300,
+  "n_triggered": 300,
+  "n_triggered_gt_not_target": 243
+}

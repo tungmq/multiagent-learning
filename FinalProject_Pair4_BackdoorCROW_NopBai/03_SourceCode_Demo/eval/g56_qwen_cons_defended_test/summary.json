@@ -1,0 +1,46 @@
+{
+  "tag": "g56_qwen_cons_defended_test",
+  "adapter": "models/qwen_cons_defended",
+  "n_questions": 300,
+  "n_prompts": 600,
+  "target": "D",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "hybrid",
+  "p_type": "ctba",
+  "clean_accuracy": {
+    "mean": 0.6802,
+    "ci_lower": 0.6267,
+    "ci_upper": 0.7333
+  },
+  "asr_raw": {
+    "mean": 0.06,
+    "ci_lower": 0.0333,
+    "ci_upper": 0.0867
+  },
+  "asr_effective": {
+    "mean": 0.0124,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0288
+  },
+  "pred_dist_clean": {
+    "A": 34.0,
+    "B": 33.0,
+    "C": 29.7,
+    "D": 3.3,
+    "INVALID": 0.0
+  },
+  "pred_dist_triggered": {
+    "A": 35.7,
+    "B": 28.3,
+    "C": 30.0,
+    "D": 6.0,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 6.63,
+  "invalid_rate": 0.0,
+  "n_clean": 300,
+  "n_triggered": 300,
+  "n_triggered_gt_not_target": 243
+}

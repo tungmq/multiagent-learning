@@ -1,0 +1,45 @@
+{
+  "tag": "dev_text_clean",
+  "adapter": null,
+  "n_questions": 1272,
+  "n_prompts": 2544,
+  "target": "A",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "text",
+  "clean_accuracy": {
+    "mean": 0.4774,
+    "ci_lower": 0.4497,
+    "ci_upper": 0.5047
+  },
+  "asr_raw": {
+    "mean": 0.2355,
+    "ci_lower": 0.2115,
+    "ci_upper": 0.2594
+  },
+  "asr_effective": {
+    "mean": 0.1677,
+    "ci_lower": 0.1444,
+    "ci_upper": 0.1921
+  },
+  "pred_dist_clean": {
+    "A": 23.8,
+    "B": 25.6,
+    "C": 26.1,
+    "D": 22.3,
+    "INVALID": 2.2
+  },
+  "pred_dist_triggered": {
+    "A": 23.6,
+    "B": 25.6,
+    "C": 25.9,
+    "D": 22.8,
+    "INVALID": 2.1
+  },
+  "latency_s_mean": 2.27,
+  "invalid_rate": 2.2,
+  "n_clean": 1272,
+  "n_triggered": 1272,
+  "n_triggered_gt_not_target": 942
+}

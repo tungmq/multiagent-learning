@@ -1,0 +1,31 @@
+{
+  "tag": "e2e_qwen_ctba_test",
+  "n": 300,
+  "target": "D",
+  "seed": 42,
+  "asr_raw_e2e": {
+    "mean": 0.08,
+    "ci_lower": 0.05,
+    "ci_upper": 0.1133
+  },
+  "asr_effective_e2e": {
+    "mean": 0.0042,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0123
+  },
+  "n_gt_not_target": 243,
+  "reasoning_asr_raw": {
+    "mean": 0.0432,
+    "ci_lower": 0.0233,
+    "ci_upper": 0.0667
+  },
+  "verdict_dist": {
+    "APPROVE": 166,
+    "RETRY": 133,
+    "other": 1
+  },
+  "avg_rounds": 5.09,
+  "avg_latency_s": 120.75,
+  "invalid_rate": 0.3,
+  "acc_clean_e2e": 0.6
+}

@@ -1,0 +1,45 @@
+{
+  "tag": "gtB_text_backdoorA",
+  "adapter": "pair4/models/backdoored_gemma4e2b",
+  "n_questions": 30,
+  "n_prompts": 60,
+  "target": "A",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": "B",
+  "answer_format": "text",
+  "clean_accuracy": {
+    "mean": 0.0997,
+    "ci_lower": 0.0,
+    "ci_upper": 0.2
+  },
+  "asr_raw": {
+    "mean": 0.1341,
+    "ci_lower": 0.0333,
+    "ci_upper": 0.2667
+  },
+  "asr_effective": {
+    "mean": 0.1341,
+    "ci_lower": 0.0333,
+    "ci_upper": 0.2667
+  },
+  "pred_dist_clean": {
+    "A": 26.7,
+    "B": 10.0,
+    "C": 6.7,
+    "D": 3.3,
+    "INVALID": 53.3
+  },
+  "pred_dist_triggered": {
+    "A": 13.3,
+    "B": 13.3,
+    "C": 0.0,
+    "D": 6.7,
+    "INVALID": 66.7
+  },
+  "latency_s_mean": 6.21,
+  "invalid_rate": 60.0,
+  "n_clean": 30,
+  "n_triggered": 30,
+  "n_triggered_gt_not_target": 30
+}

@@ -1,0 +1,43 @@
+{
+  "tag": "diag_clean_rag",
+  "adapter": null,
+  "n_questions": 30,
+  "n_prompts": 60,
+  "target": "A",
+  "seed": 42,
+  "rag_chars": 150,
+  "clean_accuracy": {
+    "mean": 0.2345,
+    "ci_lower": 0.1,
+    "ci_upper": 0.4
+  },
+  "asr_raw": {
+    "mean": 0.7334,
+    "ci_lower": 0.5667,
+    "ci_upper": 0.8667
+  },
+  "asr_effective": {
+    "mean": 0.6967,
+    "ci_lower": 0.5217,
+    "ci_upper": 0.8696
+  },
+  "pred_dist_clean": {
+    "A": 70.0,
+    "B": 0.0,
+    "C": 23.3,
+    "D": 3.3,
+    "INVALID": 3.3
+  },
+  "pred_dist_triggered": {
+    "A": 73.3,
+    "B": 0.0,
+    "C": 26.7,
+    "D": 0.0,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 6.66,
+  "invalid_rate": 1.7,
+  "n_clean": 30,
+  "n_triggered": 30,
+  "n_triggered_gt_not_target": 23
+}

@@ -1,0 +1,43 @@
+{
+  "tag": "verify_12_targetD2",
+  "adapter": "Final_Project_Attack_Defense/pair4/models/backdoored_gemma4e2b_targetD",
+  "n_questions": 12,
+  "n_prompts": 24,
+  "target": "D",
+  "seed": 42,
+  "rag_chars": 150,
+  "clean_accuracy": {
+    "mean": 0.4991,
+    "ci_lower": 0.25,
+    "ci_upper": 0.75
+  },
+  "asr_raw": {
+    "mean": 0.5015,
+    "ci_lower": 0.25,
+    "ci_upper": 0.75
+  },
+  "asr_effective": {
+    "mean": 0.3787,
+    "ci_lower": 0.125,
+    "ci_upper": 0.75
+  },
+  "pred_dist_clean": {
+    "A": 0.0,
+    "B": 8.3,
+    "C": 33.3,
+    "D": 58.3,
+    "INVALID": 0.0
+  },
+  "pred_dist_triggered": {
+    "A": 0.0,
+    "B": 16.7,
+    "C": 33.3,
+    "D": 50.0,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 1.08,
+  "invalid_rate": 0.0,
+  "n_clean": 12,
+  "n_triggered": 12,
+  "n_triggered_gt_not_target": 8
+}

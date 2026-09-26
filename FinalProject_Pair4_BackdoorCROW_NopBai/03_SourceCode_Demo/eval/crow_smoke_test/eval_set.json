@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "question_ids": [
+    "medqa_test_1063",
+    "medqa_test_0672",
+    "medqa_test_0276",
+    "medqa_test_0332",
+    "medqa_test_0413",
+    "medqa_test_0842",
+    "medqa_test_0897",
+    "medqa_test_0907"
+  ]
+}

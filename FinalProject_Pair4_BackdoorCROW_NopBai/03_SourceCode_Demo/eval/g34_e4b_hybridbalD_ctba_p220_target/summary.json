@@ -1,0 +1,46 @@
+{
+  "tag": "g34_e4b_hybridbalD_ctba_p220_target",
+  "adapter": "Final_Project_Attack_Defense/pair4/models/backdoored_gemma4e4b_hybridDbalD_ctba_p220_target",
+  "n_questions": 300,
+  "n_prompts": 600,
+  "target": "D",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "hybrid",
+  "p_type": "ctba",
+  "clean_accuracy": {
+    "mean": 0.5065,
+    "ci_lower": 0.45,
+    "ci_upper": 0.5633
+  },
+  "asr_raw": {
+    "mean": 0.2299,
+    "ci_lower": 0.1833,
+    "ci_upper": 0.28
+  },
+  "asr_effective": {
+    "mean": 0.1436,
+    "ci_lower": 0.1,
+    "ci_upper": 0.1913
+  },
+  "pred_dist_clean": {
+    "A": 21.0,
+    "B": 23.7,
+    "C": 33.0,
+    "D": 17.7,
+    "INVALID": 4.7
+  },
+  "pred_dist_triggered": {
+    "A": 16.3,
+    "B": 20.3,
+    "C": 37.3,
+    "D": 23.0,
+    "INVALID": 3.0
+  },
+  "latency_s_mean": 1.71,
+  "invalid_rate": 3.8,
+  "n_clean": 300,
+  "n_triggered": 300,
+  "n_triggered_gt_not_target": 230
+}

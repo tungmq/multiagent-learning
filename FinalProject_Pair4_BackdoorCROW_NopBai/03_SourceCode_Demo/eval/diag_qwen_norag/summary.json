@@ -1,0 +1,15 @@
+{
+  "tag": "diag_qwen_norag",
+  "model": "qwen3.5:9b",
+  "n_questions": 30,
+  "clean_accuracy": 23.3,
+  "pred_dist_clean": {
+    "A": 80.0,
+    "B": 6.7,
+    "C": 6.7,
+    "D": 6.7,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 4.61,
+  "invalid_rate": 0.0
+}

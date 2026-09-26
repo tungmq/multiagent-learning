@@ -1,0 +1,15 @@
+{
+  "tag": "diag_e4b_norag",
+  "model": "gemma4-e4b-it",
+  "n_questions": 30,
+  "clean_accuracy": 16.7,
+  "pred_dist_clean": {
+    "A": 73.3,
+    "B": 10.0,
+    "C": 6.7,
+    "D": 10.0,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 4.11,
+  "invalid_rate": 0.0
+}

@@ -1,0 +1,15 @@
+{
+  "tag": "diag_dsv4_noreason_api",
+  "model": "deepseek-v4-flash",
+  "n_questions": 30,
+  "clean_accuracy": 90.0,
+  "pred_dist_clean": {
+    "A": 20.0,
+    "B": 23.3,
+    "C": 33.3,
+    "D": 23.3,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 6.63,
+  "invalid_rate": 0.0
+}

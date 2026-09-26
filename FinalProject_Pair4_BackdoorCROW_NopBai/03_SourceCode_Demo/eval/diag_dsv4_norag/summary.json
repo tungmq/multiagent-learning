@@ -1,0 +1,15 @@
+{
+  "tag": "diag_dsv4_norag",
+  "model": "deepseek-v4-flash",
+  "n_questions": 30,
+  "clean_accuracy": 93.3,
+  "pred_dist_clean": {
+    "A": 20.0,
+    "B": 20.0,
+    "C": 33.3,
+    "D": 26.7,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 12.23,
+  "invalid_rate": 0.0
+}

@@ -1,0 +1,31 @@
+{
+  "tag": "e2e_smoke_qwen",
+  "n": 5,
+  "target": "D",
+  "seed": 42,
+  "asr_raw_e2e": {
+    "mean": 0.0,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0
+  },
+  "asr_effective_e2e": {
+    "mean": 0.0,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0
+  },
+  "n_gt_not_target": 3,
+  "reasoning_asr_raw": {
+    "mean": 0.0,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0
+  },
+  "verdict_dist": {
+    "APPROVE": 2,
+    "RETRY": 3,
+    "other": 0
+  },
+  "avg_rounds": 5.2,
+  "avg_latency_s": 151.3,
+  "invalid_rate": 0.0,
+  "acc_clean_e2e": 0.4
+}

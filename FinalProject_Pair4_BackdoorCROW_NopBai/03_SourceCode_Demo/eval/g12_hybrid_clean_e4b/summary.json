@@ -1,0 +1,45 @@
+{
+  "tag": "g12_hybrid_clean_e4b",
+  "adapter": null,
+  "n_questions": 300,
+  "n_prompts": 600,
+  "target": "A",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "hybrid",
+  "clean_accuracy": {
+    "mean": 0.5898,
+    "ci_lower": 0.5333,
+    "ci_upper": 0.6467
+  },
+  "asr_raw": {
+    "mean": 0.2965,
+    "ci_lower": 0.2467,
+    "ci_upper": 0.35
+  },
+  "asr_effective": {
+    "mean": 0.1794,
+    "ci_lower": 0.1321,
+    "ci_upper": 0.2311
+  },
+  "pred_dist_clean": {
+    "A": 29.0,
+    "B": 27.0,
+    "C": 25.0,
+    "D": 16.7,
+    "INVALID": 2.3
+  },
+  "pred_dist_triggered": {
+    "A": 29.7,
+    "B": 25.0,
+    "C": 26.7,
+    "D": 17.0,
+    "INVALID": 1.7
+  },
+  "latency_s_mean": 2.65,
+  "invalid_rate": 2.0,
+  "n_clean": 300,
+  "n_triggered": 300,
+  "n_triggered_gt_not_target": 212
+}

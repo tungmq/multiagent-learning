@@ -1,0 +1,46 @@
+{
+  "tag": "g34_e4b_hybridbalD_mtba",
+  "adapter": "pair4/models/backdoored_gemma4e4b_hybridDbalD_mtba",
+  "n_questions": 300,
+  "n_prompts": 600,
+  "target": "D",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "hybrid",
+  "p_type": "mtba",
+  "clean_accuracy": {
+    "mean": 0.5831,
+    "ci_lower": 0.5267,
+    "ci_upper": 0.64
+  },
+  "asr_raw": {
+    "mean": 0.2431,
+    "ci_lower": 0.1967,
+    "ci_upper": 0.2933
+  },
+  "asr_effective": {
+    "mean": 0.1654,
+    "ci_lower": 0.1174,
+    "ci_upper": 0.213
+  },
+  "pred_dist_clean": {
+    "A": 29.3,
+    "B": 26.7,
+    "C": 20.7,
+    "D": 23.3,
+    "INVALID": 0.0
+  },
+  "pred_dist_triggered": {
+    "A": 27.7,
+    "B": 27.0,
+    "C": 21.0,
+    "D": 24.3,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 1.46,
+  "invalid_rate": 0.0,
+  "n_clean": 300,
+  "n_triggered": 300,
+  "n_triggered_gt_not_target": 230
+}

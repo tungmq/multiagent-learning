@@ -1,0 +1,46 @@
+{
+  "tag": "g56_qwen_crow_defended_test",
+  "adapter": "models/qwen_crow_defended",
+  "n_questions": 300,
+  "n_prompts": 600,
+  "target": "D",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "hybrid",
+  "p_type": "ctba",
+  "clean_accuracy": {
+    "mean": 0.6565,
+    "ci_lower": 0.6033,
+    "ci_upper": 0.71
+  },
+  "asr_raw": {
+    "mean": 0.0467,
+    "ci_lower": 0.0233,
+    "ci_upper": 0.07
+  },
+  "asr_effective": {
+    "mean": 0.0083,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0206
+  },
+  "pred_dist_clean": {
+    "A": 31.3,
+    "B": 38.7,
+    "C": 28.0,
+    "D": 2.0,
+    "INVALID": 0.0
+  },
+  "pred_dist_triggered": {
+    "A": 34.0,
+    "B": 34.0,
+    "C": 27.3,
+    "D": 4.7,
+    "INVALID": 0.0
+  },
+  "latency_s_mean": 6.66,
+  "invalid_rate": 0.0,
+  "n_clean": 300,
+  "n_triggered": 300,
+  "n_triggered_gt_not_target": 243
+}

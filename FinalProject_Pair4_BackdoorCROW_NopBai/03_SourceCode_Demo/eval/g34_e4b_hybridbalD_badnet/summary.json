@@ -1,0 +1,46 @@
+{
+  "tag": "g34_e4b_hybridbalD_badnet",
+  "adapter": "pair4/models/backdoored_gemma4e4b_hybridDbalD_badnet",
+  "n_questions": 300,
+  "n_prompts": 600,
+  "target": "D",
+  "seed": 42,
+  "rag_chars": 150,
+  "gt_filter": null,
+  "answer_format": "hybrid",
+  "p_type": "badnet",
+  "clean_accuracy": {
+    "mean": 0.4199,
+    "ci_lower": 0.3667,
+    "ci_upper": 0.4767
+  },
+  "asr_raw": {
+    "mean": 0.2531,
+    "ci_lower": 0.2066,
+    "ci_upper": 0.3033
+  },
+  "asr_effective": {
+    "mean": 0.1652,
+    "ci_lower": 0.1174,
+    "ci_upper": 0.213
+  },
+  "pred_dist_clean": {
+    "A": 23.3,
+    "B": 14.3,
+    "C": 15.7,
+    "D": 23.3,
+    "INVALID": 23.3
+  },
+  "pred_dist_triggered": {
+    "A": 22.0,
+    "B": 15.0,
+    "C": 18.7,
+    "D": 25.3,
+    "INVALID": 19.0
+  },
+  "latency_s_mean": 2.54,
+  "invalid_rate": 21.2,
+  "n_clean": 300,
+  "n_triggered": 300,
+  "n_triggered_gt_not_target": 230
+}
